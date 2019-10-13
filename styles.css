@@ -1,9 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:500&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap');
 * {
     box-sizing: border-box;
     padding: 0px;
     margin: 0px; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+html, body {
+    height: 100%;
+    overflow: auto;
+    scroll-behavior: smooth;
+
 }
 header {
     display: flex;
@@ -13,8 +20,6 @@ header {
     background-color: rgb(0, 18, 24);
 }
 a, li, button{
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
     font-size: 16px;
     color: white;
     text-decoration: none;
@@ -57,8 +62,6 @@ header button:hover {
 
 header h1{
     cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
     font-size: 18px;
     color: white;
     text-decoration: none;
@@ -68,4 +71,44 @@ header h1{
     padding: 10px 20px;
     border-color: white;
     
+}
+
+.banner {
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+    height: 92vh;
+    background: linear-gradient(rgba(0, 18, 24, 0.7),rgba(0, 18, 24, 0.9)), url(/images/banner_background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.banner_info h1 {
+    font-size: 6.750em;
+    color: white;
+}
+
+.banner_info h2 {
+    font-size: 3.575em;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.banner_arrow a {
+    transition: all 0.3s ease 0s;
+    text-align: center;
+    font-size: 3.575em;
+    font-weight: 400;
+    color: white;
+}
+
+.banner_arrow a:hover {
+    font-size: 4.575em;
+    transition: all 0.3s ease 0s;
+    color: rgba(255,255,255,0.6);
+    cursor: pointer;
 }
