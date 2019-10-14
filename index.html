@@ -1,39 +1,78 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Parmvir Grewal's Personal Website</title>
-        <meta name="description" content="Parmvir Grewal: Front-End Web Developer">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="/styles.css"/>
-        <script src="https://kit.fontawesome.com/9e0a450b02.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <main>
-                <header>
-                        <h1>Parmvir Grewal</h1>
-                        <nav>
-                            <ul class="links">
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Personal Info</a></li>
-                                <li><a href="">Resume</a></li>        
-                            </ul>
-                        </nav>
-                        <a href=""><button>Contact Me</button></a>
-                </header>
-        
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Parmvir Grewal's Personal Website</title>
+    <meta name="description" content="Parmvir Grewal: Front-End Web Developer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <script src="https://kit.fontawesome.com/9e0a450b02.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <header>
+            <div class="logo">
+                <h1>Parmvir Grewal</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Personal Info</a></li>
+                    <li><a href="">Resume</a></li>
+                    <li><a href=""><button>Contact Me</button></a> </li>
+                </ul>
+
+            </nav>
+            <div class="toggle"><i class="fas fa-bars"></i></div>
+        </header>
+
         <section class="banner">
             <div class="banner_info">
                 <h1>Parmvir Grewal</h1>
                 <h2>Aspiring Web Developer</h2>
-                
+
             </div>
             <div class="banner_arrow">
-                <a href=""><i class="fas fa-arrow-circle-down"></i></a>
+                <a href="#info"><i class="fas fa-arrow-circle-down"></i></a>
             </div>
         </section>
-        
-        </main> 
-    </body>
+        <section class="info" id="info">
+            <div class="info_title">
+                <h3>Webaite Design</h3>
+            </div>
+
+            <div class="info_item1">
+                <i class="fas fa-palette"></i>
+                <h4>Appearence</h4>
+                <p>A website's design should be engaging and designed in way where there is a set theme that flows throughout the site.
+                </p>
+            </div>
+            <div class="info_item2">
+                <i class="fas fa-mobile"></i>
+                <h4>Responsive Design</h4>
+                <p>A website should be responsive in design on all sorts of devices from a phone or tablet to a desktop.</p>
+            </div>
+            <div class="info_item3">
+                <i class="fas fa-window-restore"></i>
+                <h4>Consistent</h4>
+                <p>A website should be consistent throughout various browser's and should provide the same overall experince to everyone.</p>
+            </div>
+        </section>
+        <section class="myskills">
+
+
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript">$(document).ready(function () {
+            $('.toggle').click(function () {
+                $('nav').toggleClass('active')
+            })
+        })
+    </script>
+</body>
+
 </html>

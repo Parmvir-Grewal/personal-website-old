@@ -7,60 +7,21 @@
     font-weight: 500;
 }
 html, body {
-    height: 100%;
     overflow: auto;
     scroll-behavior: smooth;
 
 }
 header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 20px 3%;
     background-color: rgb(0, 18, 24);
 }
-a, li, button{
-    font-size: 16px;
-    color: white;
-    text-decoration: none;
-}
-header h1{
-    margin-right: auto;
 
-}
-.links {
-    list-style: none;
-}
-
-.links li {
-    display: inline-block;
-    padding: 0px 10px;
-}
-
-.links li a {
-    transition: all 0.3s ease 0s;
-}
-
-.links li a:hover {
-    transition: all 0.3s ease 0s;
-    color: red;
-}
-
-header button {
-    cursor: pointer;
-    padding: 9px 25px;
-    margin: 0px 10px;
-    background-color: rgba(255, 0, 0, 1);
-    border: none;
-    border-radius: 25px;
-    transition: all 0.3s ease 0s;
-}
-
-header button:hover {
-    background-color: rgba(255, 0, 0, 0.7);
-}
-
-header h1{
+header .logo h1{
     cursor: pointer;
     font-size: 18px;
     color: white;
@@ -70,7 +31,92 @@ header h1{
     border-style: solid;
     padding: 10px 20px;
     border-color: white;
+
+}
+
+header .logo {
+    float: left;
+
+}
+
+header nav {
+    float:right;
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
     
+}
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    height: 50px;
+    line-height: 50px;
+    padding: 0px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+header nav ul li a:hover{
+    transition: all 0.3s ease 0s;
+    color: red;
+
+}
+
+
+.toggle {
+    color: white;
+    float: right;
+    line-height: 50px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .toggle {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background: rgb(0, 18, 24);
+        top: 90px;
+        left: -100%;
+        transition: 0.5s;
+    }
+    header nav.active {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+        text-align: center;
+    }
+    
+}
+header nav ul li a button {
+    cursor: pointer;
+    padding: 9px 25px;
+    margin: 0px 10px;
+    background-color: rgba(255, 0, 0, 1);
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    transition: all 0.3s ease 0s;
+}
+
+header nav ul li a button:hover {
+    background-color: rgba(255, 0, 0, 0.7);
 }
 
 .banner {
@@ -78,7 +124,7 @@ header h1{
     flex-direction:  column;
     align-items: center;
     justify-content: center;
-    height: 92vh;
+    height: 100vh;
     background: linear-gradient(rgba(0, 18, 24, 0.7),rgba(0, 18, 24, 0.9)), url(/images/banner_background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -111,4 +157,97 @@ header h1{
     transition: all 0.3s ease 0s;
     color: rgba(255,255,255,0.6);
     cursor: pointer;
+}
+
+.info {
+    display: grid;
+    grid-row: 1fr 1fr;
+    grid-column: 60px 1fr 1fr 1fr 60px;
+    background-color: rgb(0, 18, 24);
+}
+
+.info_title h3{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.975em;
+    text-align: center;
+}
+
+.info_title {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 6;
+}
+
+.info_item1 {
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+    transition: all 0.3s ease 0s;
+}
+
+.info_item2 {
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    grid-row: 2 / span 1;
+    grid-column: 3 / span 1;
+}
+
+
+.info_item3 {
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    text-align: center;
+    grid-row: 2 / span 1;
+    grid-column: 4 / span 1;
+}
+
+
+.info_item1 h4, .info_item2 h4, .info_item3 h4, .info_item4 h4{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 25px;
+}
+
+.info_item1 i, .info_item2 i, .info_item3 i, .info_item4 i{
+    margin-top: 20px;
+    font-size: 3.775em;
+}
+
+
+@media (max-width: 915px) {
+    .info {
+        display: grid;
+        grid-row: 60px 1fr 1fr 1fr 1fr 60px;
+        grid-column: 1fr;
+        background-color: rgb(0, 18, 24);
+    }
+    .info_title {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+    }
+  
+    .info_item1 {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .info_item2 {
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+    }
+    .info_item3 {
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 1;
+    }
 }
