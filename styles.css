@@ -164,6 +164,7 @@ header nav ul li a button:hover {
     grid-row: 1fr 1fr;
     grid-column: 60px 1fr 1fr 1fr 60px;
     background-color: rgb(0, 18, 24);
+    padding-bottom: 20px;
 }
 
 .info_title h3{
@@ -250,4 +251,81 @@ header nav ul li a button:hover {
         grid-row: 5 / span 1;
         grid-column: 1 / span 1;
     }
+}
+
+.social_banner {
+    height: 150px;
+    display: grid;
+    color: white;
+    background: linear-gradient(rgba(0, 18, 24, 0.8),rgba(0, 18, 24, 0.9)), url(/images/social_banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: fill;
+    grid-column: 60px 1fr 1fr 1fr 1fr 60px;
+    grid-row: 1fr;
+    align-items: center;
+    font-size: 70px;
+}
+
+.social_icons1 {
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+
+}
+
+.social_icons1:hover {
+    color: #4267B2;
+    transition: all 0.3s ease 0s;
+}
+
+.social_icons2 {
+    grid-row: 1 / span 1;
+    grid-column: 3 / span 1;
+}
+
+.social_icons2:hover {
+    color: #0e76a8;
+    transition: all 0.3s ease 0s;
+}
+.social_icons3 {
+    grid-row: 1 / span 1;
+    grid-column: 4 / span 1;
+}
+
+.social_icons3:hover {
+    color: #6cc644;
+    transition: all 0.3s ease 0s;
+}
+.social_icons4 {
+    grid-row: 1 / span 1;
+    grid-column: 5 / span 1;
+}
+
+.social_icons4:hover {
+    color: #00aced;
+    transition: all 0.3s ease 0s;
+}
+
+.aboutme_title h3{
+    padding-top: 15px;
+    margin-bottom: 15px;
+    color: white;
+    font-weight: 500;
+    font-size: 1.975em;
+    text-align: center;
+}
+
+.aboutme {
+    display: flex;
+    color: white;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 18, 24);
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.description p {
+    width: 50vw;
 }
