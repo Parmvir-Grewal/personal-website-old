@@ -7,6 +7,7 @@
     <meta name="description" content="Parmvir Grewal: Front-End Web Developer">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <script src="https://kit.fontawesome.com/9e0a450b02.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -18,7 +19,7 @@
             <nav>
                 <ul>
                     <li><a href="">Home</a></li>
-                    <li><a href="">Personal Info</a></li>
+                    <li><a href="#description">Personal Info</a></li>
                     <li><a href="">Resume</a></li>
                     <li><a href=""><button>Contact Me</button></a> </li>
                 </ul>
@@ -27,8 +28,8 @@
         </header>
         <section class="banner">
             <div class="banner_info">
-                <h1>Parmvir Grewal</h1>
-                <h2>Aspiring Web Developer</h2>
+                <h1 class="animated bounceInDown delay-1s">Parmvir Grewal</h1>
+                <h2 class="animated bounceInDown delay-1s">Aspiring Web Developer</h2>
             </div>
             <div class="banner_arrow">
                 <a href="#info"><i class="fas fa-arrow-circle-down"></i></a>
@@ -76,11 +77,20 @@
             <div class="aboutme_title">
                 <h3>About Me</h3>
             </div>
-            <div class="description">
+            <div class="description" id="description">
                 <p>I am a second year student studying at University of Toronto, Aspiring to be a web developer. I love technology and coding, I know many languages such as Python, Java, Html, Javascript, CSS. I am studying Computer Scince and Information Systems and love what im learning anf find coding fascinating.</p>
             </div>
         </section>
+        
     </main>
+    <footer>
+        <div class="footer">
+            <p>
+                © Parmvir Grewal 2020 
+            </p>
+            <p>All Rights Reserved.</p>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.4.1.js"
         integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript">$(document).ready(function () {

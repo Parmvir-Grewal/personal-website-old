@@ -8,6 +8,7 @@
 }
 html, body {
     overflow: auto;
+    width: 100%;
     scroll-behavior: smooth;
 
 }
@@ -31,7 +32,6 @@ header .logo h1{
     border-style: solid;
     padding: 10px 20px;
     border-color: white;
-
 }
 
 header .logo {
@@ -46,8 +46,7 @@ header nav {
 header nav ul {
     margin: 0;
     padding: 0;
-    display: flex;
-    
+    display: flex;  
 }
 
 header nav ul li{
@@ -328,4 +327,16 @@ header nav ul li a button:hover {
 
 .description p {
     width: 50vw;
+}
+
+.footer {
+    border-top: white solid;
+    color: white;
+    padding: 15px;
+    background-color: rgb(0, 18, 24);
+
+}
+
+.footer p { 
+    text-align: center;
 }
