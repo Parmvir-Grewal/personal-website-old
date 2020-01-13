@@ -90,6 +90,7 @@ header nav ul li a:hover{
         background: rgb(0, 18, 24);
         top: 90px;
         left: -100%;
+        z-index: 10000000;
         transition: 0.5s;
     }
     header nav.active {
